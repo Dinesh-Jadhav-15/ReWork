@@ -1,0 +1,161 @@
+<!-- <div class="bg">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <form>
+          <div class="mb-2">
+            <label for="">Name</label>
+            <input
+              name="name"
+              [(ngModel)]="doctor.name"
+              name="name"
+              [value]="doctor.name"
+              required="true"
+              type="text"
+              class="form-control"
+              placeholder="Doctor name"
+            />
+          </div>
+          <div class="mb-2">
+            <label for="">Specialization</label>
+            <input
+              name="field"
+              [(ngModel)]="doctor.field"
+              name="field"
+              [value]="doctor.field"
+              required="true"
+              type="text"
+              class="form-control"
+              placeholder="Enter Field"
+            />
+          </div>
+          <div class="mb-2">
+            <label for="">Age</label>
+            <input
+              name="age"
+              [(ngModel)]="doctor.age"
+              name="age"
+              [value]="doctor.age"
+              required="true"
+              type="number"
+              class="form-control"
+              placeholder="Enter age"
+            />
+          </div>
+          <div class="mb-2">
+            <label for="gender">Choose Gender</label>
+            <select
+              id="gender"
+              [(ngModel)]="doctor.gender"
+              [value]="doctor.gender"
+              class="form-control"
+              name="gender"
+            >
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="others">Others</option>
+            </select>
+          </div>
+          <div class="mb-2">
+            <button
+              type="submit"
+              (click)="saveDoctor()"
+              class="btn btn-primary"
+            >
+              Create
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div> -->
+<!-- <pre>{{doctor | json}}</pre> -->
+
+<div class="doctorcreate-wrapper">
+  <div class="doctorecreate-form-wrapper">
+    <div class="doctorcreate-image"></div>
+    <div class="doctor-create-form">
+      <h2 class="doctor-create-heading">Register Doctor To Hospital</h2>
+      <div>
+        <form>
+          <div class="form-group">
+            <label for="">Name</label>
+            <input
+              name="name"
+              [(ngModel)]="doctor.name"
+              name="name"
+              [value]="doctor.name"
+              required
+              type="text"
+              class="form-control"
+              placeholder="Doctor name"
+            />
+          </div>
+          <div class="form-group">
+            <label for="">Specialization</label>
+            <input
+              name="field"
+              [(ngModel)]="doctor.field"
+              name="field"
+              [value]="doctor.field"
+              required
+              type="text"
+              class="form-control"
+              placeholder="Doctor Specialization"
+            />
+          </div>
+          <div class="form-group">
+            <label for="">Age</label>
+            <input
+              name="age"
+              [(ngModel)]="doctor.age"
+              name="age"
+              [value]="doctor.age"
+              required
+              type="number"
+              class="form-control"
+              placeholder="Enter age"
+            />
+          </div>
+          <div class="form-group">
+            <label for="">Patient Count</label>
+            <input
+              name="age"
+              [(ngModel)]="doctor.patient_count"
+              name="age"
+              [value]="doctor.patient_count"
+              required
+              type="number"
+              class="form-control"
+              placeholder="Patient count"
+            />
+          </div>
+          <div class="form-group">
+            <label for="gender">Choose Gender</label>
+            <select
+              id="gender"
+              [(ngModel)]="doctor.gender"
+              [value]="doctor.gender"
+              class="form-control"
+              name="gender"
+              required
+            >
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="others">Others</option>
+            </select>
+          </div>
+
+          <button
+            type="submit"
+            class="btn btn-primary create"
+            (click)="saveDoctor()"
+          >
+            Create
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

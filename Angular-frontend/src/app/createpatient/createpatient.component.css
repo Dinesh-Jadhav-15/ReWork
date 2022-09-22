@@ -1,0 +1,95 @@
+.create-patient-wrapper {
+    padding: 5px;
+    margin: 10px;
+}
+
+.create-patient {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.create-patient-image {
+    background-image: url(https://thumbs.dreamstime.com/b/female-doctor-ready-to-write-patient-information-fills-registration-prior-admission-examination-thorough-completing-51912839.jpg);
+    background-repeat: no-repeat;
+    height: 120vh;
+    width: 100%;
+}
+
+
+.patient-create-form {
+    /* border: 2px solid red; */
+    padding: 4%;
+    margin: 0.5%;
+    background-color: rgb(252, 251, 248);
+}
+
+.patient-create-heading {
+    margin-top: 5px;
+    text-align: center;
+    border-bottom: 1px solid gray;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 10px;
+
+}
+
+label {
+    margin-left: 10%;
+    margin-bottom: 5px;
+    font-display: bold;
+    font-weight: 500;
+}
+
+select {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.create {
+    display: flex;
+    margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .create-patient {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .create-patient-image {
+        background-image: url(https://thumbs.dreamstime.com/b/female-doctor-ready-to-write-patient-information-fills-registration-prior-admission-examination-thorough-completing-51912839.jpg);
+        background-repeat: no-repeat;
+        height: 50vh;
+        width: 100%;
+    }
+
+    .patient-create-form {
+        width: 100%;
+        padding: 4%;
+        height: 86vh;
+        margin: 0.5%;
+    }
+
+    select {
+        width: 80%;
+        display: flex;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-device-width: 768px) {
+
+    select {
+        width: 80%;
+        display: flex;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+}

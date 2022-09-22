@@ -1,0 +1,55 @@
+<div class="show-doctor-wrapper">
+  <h2>Doctors Details</h2>
+  <div class="container">
+    <form class="form-inline mt-4">
+      <label for="doctor">Choose Doctor</label>
+      <div class="show-doctor-search">
+        <select class="form-control" [(ngModel)]="doc.name" name="name">
+          <option [value]="docs.name" *ngFor="let docs of doctor">
+            {{ docs.name }}
+          </option>
+        </select>
+
+        <button
+          class="btn btn-warning search"
+          type="button"
+          (click)="showDoctorDetails()"
+        >
+          <i class="fa fa-search"> </i> search
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div *ngIf="doc != null">
+  <div class="card-doctor">
+    <h2>Doctor Information</h2>
+    <div class="card-doctor-wrapper">
+      <div class="card-doctor-img">
+        <div class="card-doctor-img-main">
+          <img
+            src="https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-user-vector-avatar-png-image_1541962.jpg"
+            alt="avtar"
+          />
+          <p>{{ doc.name }}</p>
+        </div>
+      </div>
+      <div class="card-doctor-info">
+        <p>Doctor Name : {{ doc.name }}</p>
+        <p>Doctor specialist : {{ doc.field }}</p>
+        <p *ngIf="doc.gender != null">Doctor Gender : {{ doc.gender }}</p>
+        <p *ngIf="doc.gender != null">Doctor Age : {{ doc.age }}</p>
+        <p *ngIf="doc.patient_count != null">
+          Patient Count : {{ doc.patient_count }}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--   <h2>Doctor Details</h2> -->
+<div *ngFor="let docs of doctor; let i = index">
+  <ul></ul>
+</div>
+<!-- <pre>{{ doctor | json }}</pre> -->

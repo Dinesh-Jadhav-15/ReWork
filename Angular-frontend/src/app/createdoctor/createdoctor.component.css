@@ -1,0 +1,92 @@
+.doctorcreate-wrapper {
+    /* border: 2px solid red; */
+    margin: 1%;
+    padding: 1%;
+
+}
+
+.doctorecreate-form-wrapper {
+    /* border: 2px solid green; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.doctorcreate-image {
+    /* background-image: url(../../assets/img/gallery/gallery-1.jpg); */
+    background-image: url(https://images.pexels.com/photos/6749773/pexels-photo-6749773.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+.doctor-create-form {
+    /* border: 2px solid red; */
+    padding: 4%;
+    margin: 0.5%;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+.doctor-create-heading {
+    margin-top: 5px;
+    text-align: center;
+    border-bottom: 1px solid gray;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 10px;
+
+}
+
+label {
+    margin-left: 10%;
+    margin-bottom: 5px;
+    font-display: bold;
+    font-weight: 500;
+}
+
+select {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.create {
+    display: flex;
+    margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+    .doctorecreate-form-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .doctorcreate-image {
+        /* background-image: url(../../assets/img/gallery/gallery-1.jpg); */
+        background-image: url(https://images.pexels.com/photos/6749773/pexels-photo-6749773.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+        background-repeat: no-repeat;
+        height: 100vh;
+        width: 100%;
+    }
+
+    .doctor-create-form {
+        /* border: 2px solid red; */
+    
+        width: 100%;
+        padding: 4%;
+        margin: 0.5%;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    }
+}
+
+@media only screen and (max-device-width: 768px) {
+    .doctorecreate-form-wrapper {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        height: 60vh;
+    }
+}

@@ -1,0 +1,79 @@
+.show-patient-wrapper {
+    width: 98%;
+    margin-left: 1%;
+    /* border: 2px solid red; */
+    margin-bottom: 5%;
+    padding: 1%;
+    margin: 1%;
+}
+
+.show-patient-heading {
+
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+}
+
+.show-patient-form-wrapper {
+    width: 90%;
+    margin-left: 5%;
+    display: grid;
+    grid-template-columns: 1fr 10%;
+}
+
+.search-btn {
+    margin-left: 5px;
+}
+
+/* card */
+body {
+    background-color: #f5f7fa;
+}
+
+.testimonial-card .card-up {
+    height: 120px;
+    overflow: hidden;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+}
+
+.aqua-gradient {
+    background: linear-gradient(40deg, #2096ff, #05ffa3) !important;
+}
+
+.testimonial-card .avatar {
+    width: 120px;
+    margin-top: -60px;
+    overflow: hidden;
+    border: 5px solid #fff;
+    border-radius: 50%;
+}
+
+.card-main p {
+    text-align: start;
+    font-weight: 600;
+    font: 300;
+
+}
+
+.card-age-gender {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+@media screen and (max-width: 768px) {
+    .show-patient-form-wrapper {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 60% 35%;
+    }
+}
+
+@media only screen and (max-device-width: 768px) {
+    .show-patient-form-wrapper {
+        width: 90%;
+        margin-left: 5%;
+        display: grid;
+        grid-template-columns: (1, 1fr);
+    }
+}
