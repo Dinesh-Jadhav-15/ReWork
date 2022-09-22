@@ -18,10 +18,15 @@ import com.fasterxml.jackson.databind.ser.impl.SimpleBeanPropertyFilter;
 import com.fasterxml.jackson.databind.ser.impl.SimpleFilterProvider;
 
 @RestController
+//@RestController is a convenience annotation for creating Restful controllers
 @CrossOrigin(origins = "http://localhost:4200")
+//Cross-Origin Resource Sharing (CORS) is a security concept that allows restricting the resources implemented in web browsers.
 public class DoctorController {
 
 	@Autowired
+	// The @Autowired annotation can be used to autowire bean on the setter method
+	// just like @Required annotation, constructor, a property or methods with
+	// arbitrary names and/or multiple arguments.
 	private HospitalService hospitalService;
 
 	@PostMapping("/doctors/doctor")

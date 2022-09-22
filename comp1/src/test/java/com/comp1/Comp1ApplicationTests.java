@@ -12,16 +12,22 @@ import com.comp1.entity.PatientEntity;
 import com.comp1.repo.DoctorRepo;
 import com.comp1.repo.PatientRepo;
 
-@SpringBootTest
+@SpringBootTest // @SpringBootTest annotation tells Spring Boot to look for a main configuration
+				// class (one with @SpringBootApplication , for instance) and use that to start
+				// a Spring application context
 class Comp1ApplicationTests {
 
-	@Autowired
+	@Autowired // The @Autowired annotation can be used to autowire bean on the setter method
+				// just like @Required annotation, constructor, a property or methods with
+				// arbitrary names and/or multiple arguments.
 	private DoctorRepo doctorRepo;
 
-	@Autowired
+	@Autowired // @Override annotation indicates that the child class method is over-writing
+				// its base class method.
 	private PatientRepo patientRepo;
 
-	@Test
+	@Test // @SpringBootTest annotation tells Spring Boot to look for a main configuration
+			// class and use that to start a Spring application context
 	void contextLoad() {
 
 	}

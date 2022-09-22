@@ -11,9 +11,11 @@ import javax.persistence.OneToMany;
 import com.fasterxml.jackson.annotation.JsonFilter;
 
 @Entity
+// @Entity annotation specifies that the class is an entity and is mapped to adatabase table.
 @JsonFilter("DoctorFilter")
+// @JsonFilter is used to apply filter during serialization/de-serialization like which properties are to be used or not.
 public class DoctorEntity {
-
+// @Id annotation specifies the primary key of an entity and the @GeneratedValue provides for the specification of generation strategies for the values of primary keys
 	@Id
 	@GeneratedValue
 	private Integer id;
@@ -25,6 +27,8 @@ public class DoctorEntity {
 	private Integer patient_count = 0;
 
 	@OneToMany
+	// This annotation represents that a collection of objects are direct children
+	// of the current entity
 	private List<PatientEntity> patients;
 
 	public List<PatientEntity> getPatients() {
@@ -55,7 +59,8 @@ public class DoctorEntity {
 		this.patient_count = patient_count;
 	}
 
-	@Override
+	@Override // @Override annotation indicates that the child class method is over-writing
+				// its base class method.
 	public String toString() {
 		return "Doctor [age=" + age + ", field=" + field + ", gender=" + gender + ", id=" + id + ", name=" + name + "]";
 	}
