@@ -48,7 +48,7 @@ class Comp1ApplicationTests {
 
 	@Test
 	public void test_getDoctor() {
-		DoctorEntity doctorEntity = doctorRepo.findById(48).get();
+		DoctorEntity doctorEntity = doctorRepo.findById(50).get();
 		assertEquals("Dummy", doctorEntity.getName());
 	}
 
